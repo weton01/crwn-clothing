@@ -4,24 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
-
-const HatsPage = () => (
-  <div>
-    <h1>HOME PAGE</h1>
-  </div>
-);
-
-const TopicsList = () => (
-  <div>
-    <h1>TOPIC LIST PAGE</h1>
-  </div>
-);
-
-const TopicDetail = () => (
-  <div>
-    <h1>TOPIC DETAIL PAGE</h1>
-  </div>
-);
+import ShopPage from './pages/shop/shop.component';
 
 
 function App() {
@@ -29,8 +12,7 @@ function App() {
     <div>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/topics' component={TopicsList} />
-        <Route path='/topics/:topicId' component={TopicDetail} />
+        <Route path='/shop' component={ShopPage} />
       </Switch>
     </div>
   );
